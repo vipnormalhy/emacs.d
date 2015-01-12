@@ -10,4 +10,6 @@
 
 (require 'init-smex)
 
+(require 'init-color-theme)
+
 (provide 'init)
