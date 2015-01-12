@@ -8,4 +8,6 @@
 (require 'init-elpa)
 (require 'init-exec-path)
 
+(require 'init-smex)
+
 (provide 'init)
