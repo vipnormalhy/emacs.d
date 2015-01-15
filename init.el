@@ -12,4 +12,6 @@
 
 (require 'init-color-theme)
 
+;; auto complete environment
+(require 'init-auto-complete)
 (provide 'init)
