@@ -55,13 +55,11 @@
  ;; /usr/include
  ;;  ")))
   (setq ac-clang-flags (list
-			"-I/usr/local/lib/gcc48/include/c++/"
-			"-I/usr/local/lib/gcc48/include/c++//x86_64-portbld-freebsd10.1"
-			"-I/usr/local/lib/gcc48/include/c++//backward"
-			"-I/usr/local/lib/gcc48/gcc/x86_64-portbld-freebsd10.1/4.8.3/include"
-			"-I/usr/local/include"
-			"-I/usr/local/lib/gcc48/gcc/x86_64-portbld-freebsd10.1/4.8.3/include-fixed"
-			"-I/usr/include"))
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include"
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include"
+			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks"))
   (setq ac-sources (append '(ac-source-clang) ac-sources)))
 
 (add-hook 'c-mode-hook 'my-clang-complete-setup)
