@@ -26,7 +26,7 @@
 (which-function-mode t)
 
 ;; encoding and language
-(set-language-environment 'Chinese-GB) ;; language environment
+(set-language-environment 'utf-8) ;; language environment
 (set-buffer-file-coding-system 'utf-8) ;; open file encoding
 (set-terminal-coding-system 'utf-8) ;; terminal encoding
 (set-keyboard-coding-system 'utf-8) ;; keyboard input encoding

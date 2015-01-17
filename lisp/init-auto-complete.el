@@ -67,4 +67,12 @@
 (add-hook 'c-mode-hook 'my-clang-complete-setup)
 (add-hook 'c++mode-hook 'my-clang-complete-setup)
 
+;; add auto comple paren settings
+;; (setq skeleton-pair t)
+;; (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+;; (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
+;; (local-set-key (kbd "`") 'skeleton-pair-insert-maybe)
+;; (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+;; (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+
 (provide 'init-auto-complete)
