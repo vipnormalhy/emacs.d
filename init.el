@@ -14,4 +14,8 @@
 
 ;; auto complete environment
 (require 'init-auto-complete)
+
+;; display style settings(include encoding)
+(require 'init-display-style)
+
 (provide 'init)
