@@ -20,3 +20,7 @@
 
 ;; display style settings(include encoding)
 (require 'init-display-style)
+
+(require 'init-search)
+
+(provide 'init)
