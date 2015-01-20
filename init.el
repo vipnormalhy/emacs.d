@@ -15,7 +15,8 @@
 ;; auto complete environment
 (require 'init-auto-complete)
 
+;; hide region and lines
+(require 'init-hide-region)
+
 ;; display style settings(include encoding)
 (require 'init-display-style)
-
-(provide 'init)
