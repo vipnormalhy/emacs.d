@@ -26,16 +26,16 @@
 (which-function-mode t)
 
 ;; encoding and language
-(set-language-environment 'utf-8) ;; language environment
-(set-buffer-file-coding-system 'utf-8) ;; open file encoding
+(set-language-environment 'chinese-gbk) ;; language environment
+;; (set-buffer-file-coding-system 'utf-8) ;; open file encoding
 (set-terminal-coding-system 'utf-8) ;; terminal encoding
-(set-keyboard-coding-system 'utf-8) ;; keyboard input encoding
-(set-clipboard-coding-system 'utf-8) ;; clipboard encoding
-(set-file-name-coding-system 'utf-8) ;; file read or write encoding
-(set-selection-coding-system 'utf-8)
-(setq-default pathname-coding-system 'utf-8)
-(setq default-buffer-file-coding-system 'utf-8) ;; new file encoding
-(set-default-coding-systems 'utf-8)
+;; (set-keyboard-coding-system 'utf-8) ;; keyboard input encoding
+;; (set-clipboard-coding-system 'utf-8) ;; clipboard encoding
+;; (set-file-name-coding-system 'utf-8) ;; file read or write filename encoding
+;; (set-selection-coding-system 'utf-8) ;; Coding system `utf-16-le-dos' is useful as the value of `selection-coding-system' in MS Windows, allowing you to paste multilingual text from the clipboard.
+;; (setq-default pathname-coding-system 'utf-8)
+;; (setq default-buffer-file-coding-system 'utf-8) ;; new file encoding
+;; (set-default-coding-systems 'utf-8)
 
 ;; add auto mode list by filename
 ;; (setq auto-mode-alist
