@@ -16,4 +16,7 @@
 
 (global-ede-mode t)
 
+(require-package 'ecb)
+(require 'ecb)
+
 (provide 'init-cedet)
