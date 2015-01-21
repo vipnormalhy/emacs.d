@@ -33,9 +33,17 @@
 ;; (set-clipboard-coding-system 'utf-8) ;; clipboard encoding
 ;; (set-file-name-coding-system 'utf-8) ;; file read or write filename encoding
 ;; (set-selection-coding-system 'utf-8) ;; Coding system `utf-16-le-dos' is useful as the value of `selection-coding-system' in MS Windows, allowing you to paste multilingual text from the clipboard.
-;; (setq-default pathname-coding-system 'utf-8)
+;; (setq default-pathname-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'chinese-gbk) ;; new file encoding
-;; (set-default-coding-systems 'utf-8)
+;; (setq default-coding-systems 'utf-8)
+
+;; bakcup commands
+;; backup, next command coding system, should never used here
+;; (set-universal-coding-system-argument)
+;; backup, subprocess coding system
+;; (set-buffer-process-coding-system)
+;; backup, specifies a coding system to use when encoding and decoding system strings such as system error messages and format-time-string formats and time stamps
+;; (set-locale-coding-system)
 
 ;; add auto mode list by filename
 ;; (setq auto-mode-alist
