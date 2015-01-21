@@ -23,4 +23,6 @@
 
 (require 'init-search)
 
+(require 'init-cscope)
+
 (provide 'init)
