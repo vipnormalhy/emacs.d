@@ -3,14 +3,19 @@
 (line-number-mode t)
 
 ;; c-set-style bsd
-;; bind c-set style in c and c++ mode
-(add-hook 'c-mode-common-hook
-	  '(lamda()
-		 (c-set-style "bsd")))
+;; I don't know what it does when the file is not c or c++ files
+;; (add-hook 'c-mode-common-hook
+;; 	  '(lamda()
+;; 		 (c-set-style "bsd")))
 
-(add-hook 'c++-mode-common-hook
-	  '(lamda()
-		 (c-set-style "bsd")))
+;; (add-hook 'c++-mode-common-hook
+;; 	  '(lamda()
+;; 		 (c-set-style "bsd")))
+(defun my-c-style-hook ()
+  (c-set-style "bsd"))
+
+(add-hook 'c-mode-common-hook 'my-c-style-hook)
+(add-hook 'c++-mode-common-hook 'my-cscope-hook)
 
 ;; show paren mode
 (show-paren-mode t)
