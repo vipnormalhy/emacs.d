@@ -13,7 +13,7 @@
 (require 'init-color-theme)
 
 ;; auto complete environment
-;;(require 'init-auto-complete)
+(require 'init-auto-complete)
 
 ;; hide region and lines
 (require 'init-hide-region)

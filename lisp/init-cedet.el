@@ -9,7 +9,9 @@
 				   ;;global-semantic-highlight-func-mode
 				   ;;global-semantic-decoration-mode
 				   ;;global-semantic-stickyfunc-mode
+				   ;;semantic-highlight-edits-mode
 				   global-semantic-mru-bookmark-mode))
+
 (semantic-mode t)
 
 (provide 'init-cedet)
