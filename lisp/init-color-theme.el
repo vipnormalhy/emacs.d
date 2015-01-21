@@ -22,5 +22,6 @@
 ;; (require-package 'warm-night-theme)
 ;; (load-theme 'warm-night)
 
+(set-face-attribute 'region nil :background "#5ff");; :foreground "#fffffe")
 
 (provide 'init-color-theme)
