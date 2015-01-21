@@ -14,4 +14,6 @@
 
 (semantic-mode t)
 
+(global-ede-mode t)
+
 (provide 'init-cedet)
