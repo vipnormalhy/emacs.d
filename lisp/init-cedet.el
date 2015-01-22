@@ -6,7 +6,7 @@
 (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
 				   global-semanticdb-minor-mode
 				   global-semantic-idle-summary-mode
-				   global-semantic-idle-completions-mode
+				   ;;global-semantic-idle-completions-mode
 				   ;;global-semantic-highlight-func-mode
 				   ;;global-semantic-decoration-mode
 				   ;;global-semantic-stickyfunc-mode
@@ -23,32 +23,33 @@
 ;; semantic system header files in gcc
 (require 'semantic/bovine/gcc)
 (defun my-semantic-include-func ()
-	(when '(file-exists-p "inc") (semantic-add-system-include "inc" 'c-mode))
-	(when '(file-exists-p "inc") (semantic-add-system-include "inc" 'c++mode))
-	(when '(file-exists-p "include") (semantic-add-system-include "include" 'c-mode))
-	(when '(file-exists-p "include") (semantic-add-system-include "include" 'c++mode))
-	(when '(file-exists-p "../include") (semantic-add-system-include "../include" 'c-mode))
-	(when '(file-exists-p "../include") (semantic-add-system-include "../include" 'c++mode))
-	(when '(file-exists-p "../../include") (semantic-add-system-include "../../include" 'c-mode))
-	(when '(file-exists-p "../../include") (semantic-add-system-include "../../include" 'c++mode))
-	(when '(file-exists-p "../inc") (semantic-add-system-include "../inc" 'c++mode))
-	(when '(file-exists-p "../inc") (semantic-add-system-include "../inc" 'c-mode)))
+	(semantic-add-system-include "./inc" 'c-mode)
+	(semantic-add-system-include "./inc" 'c++mode)
+	(semantic-add-system-include "./include" 'c-mode)
+	(semantic-add-system-include "./include" 'c++mode)
+	(semantic-add-system-include "./../include" 'c-mode)
+	(semantic-add-system-include "./../include" 'c++mode)
+	(semantic-add-system-include "./../../include" 'c-mode)
+	(semantic-add-system-include "./../../include" 'c++mode)
+	(semantic-add-system-include "./../inc" 'c++mode)
+	(semantic-add-system-include "./../inc" 'c-mode)
+	(semantic-add-system-include "./" 'c-mode)
+	(semantic-add-system-include "./" 'c++-mode))
 (add-hook 'semantic-init-hooks 'my-semantic-include-func)
 
 ;; semantic completion hot-keys
 (defun my-cedet-hook ()
-	(local-set-key [(control return)] 'semantic-ia-complete-symbol)
+	(local-set-key "\C-RET" 'semantic-ia-complete-symbol)
 	;;(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu) cannot found this function
 	(local-set-key "\C-c>" 'semantic-complete-analyze-inline)
 	(local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle))
 (defun my-c-mode-cedet-hook ()
-	(add-to-list 'ac-sources 'ac-source-gtags)
 	(add-to-list 'ac-sources 'ac-source-semantic))
 
-(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
-(add-hook 'c-mode-common-hook 'my-cedet-hook)
-(add-hook 'c++-mode-common-hook 'my-cedet-hook)
+;;(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
+;;(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
+;;(add-hook 'c-mode-common-hook 'my-cedet-hook)
+;;(add-hook 'c++-mode-common-hook 'my-cedet-hook)
 
 ;; ede settings
 (global-ede-mode t)
