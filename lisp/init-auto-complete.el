@@ -62,8 +62,8 @@
 			"-I../../inc"))
   (setq ac-sources (append '(ac-source-clang) ac-sources)))
 
-;(add-hook 'c-mode-hook 'my-clang-complete-setup)
-;(add-hook 'c++mode-hook 'my-clang-complete-setup)
+(add-hook 'c-mode-hook 'my-clang-complete-setup)
+(add-hook 'c++mode-hook 'my-clang-complete-setup)
 
 ;; add auto comple paren settings
 ;; (setq skeleton-pair t)
