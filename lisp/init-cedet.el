@@ -6,7 +6,7 @@
 (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
 				   global-semanticdb-minor-mode
 				   global-semantic-idle-summary-mode
-				   global-semantic-idle-completions-mode
+				   ;;global-semantic-idle-completions-mode
 				   ;;global-semantic-highlight-func-mode
 				   ;;global-semantic-decoration-mode
 				   ;;global-semantic-stickyfunc-mode
@@ -38,7 +38,7 @@
 ;; semantic completion hot-keys
 (defun my-cedet-hook ()
 	(local-set-key [(control return)] 'semantic-ia-complete-symbol)
-	(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu)
+	;;(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu) cannot found this function
 	(local-set-key "\C-c>" 'semantic-complete-analyze-inline)
 	(local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle))
 (add-hook 'c-mode-common-hook 'my-cedet-hook)

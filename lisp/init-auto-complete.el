@@ -33,6 +33,8 @@
                ac-source-words-in-same-mode-buffers
                ac-source-words-in-all-buffer))
 
+(setq ac-sources (append '(ac-source-semantic) ac-sources))
+
 ;; open clang auto complete while use c-mode and c++mode
 (defun my-clang-complete-setup ()
   ;; TODO

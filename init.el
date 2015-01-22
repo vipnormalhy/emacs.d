@@ -12,6 +12,7 @@
 
 (require 'init-color-theme)
 
+(require 'init-cedet)
 ;; auto complete environment
 (require 'init-auto-complete)
 
@@ -24,7 +25,5 @@
 (require 'init-search)
 
 (require 'init-cscope)
-
-(require 'init-cedet)
 
 (provide 'init)
