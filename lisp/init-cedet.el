@@ -46,10 +46,10 @@
 (defun my-c-mode-cedet-hook ()
 	(add-to-list 'ac-sources 'ac-source-semantic))
 
-;;(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-;;(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
-;;(add-hook 'c-mode-common-hook 'my-cedet-hook)
-;;(add-hook 'c++-mode-common-hook 'my-cedet-hook)
+(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
+(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
+(add-hook 'c-mode-common-hook 'my-cedet-hook)
+(add-hook 'c++-mode-common-hook 'my-cedet-hook)
 
 ;; ede settings
 (global-ede-mode t)
