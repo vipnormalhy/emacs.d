@@ -33,8 +33,6 @@
                ac-source-words-in-same-mode-buffers
                ac-source-words-in-all-buffer))
 
-(setq ac-sources (append '(ac-source-semantic) ac-sources))
-
 ;; open clang auto complete while use c-mode and c++mode
 (defun my-clang-complete-setup ()
   ;; TODO
@@ -64,8 +62,8 @@
 			"-I../../inc"))
   (setq ac-sources (append '(ac-source-clang) ac-sources)))
 
-(add-hook 'c-mode-hook 'my-clang-complete-setup)
-(add-hook 'c++mode-hook 'my-clang-complete-setup)
+;(add-hook 'c-mode-hook 'my-clang-complete-setup)
+;(add-hook 'c++mode-hook 'my-clang-complete-setup)
 
 ;; add auto comple paren settings
 ;; (setq skeleton-pair t)

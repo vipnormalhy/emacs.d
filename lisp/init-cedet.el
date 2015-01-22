@@ -41,6 +41,12 @@
 	;;(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu) cannot found this function
 	(local-set-key "\C-c>" 'semantic-complete-analyze-inline)
 	(local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle))
+(defun my-c-mode-cedet-hook ()
+	(add-to-list 'ac-sources 'ac-source-gtags)
+	(add-to-list 'ac-sources 'ac-source-semantic))
+
+(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
+(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
 (add-hook 'c-mode-common-hook 'my-cedet-hook)
 (add-hook 'c++-mode-common-hook 'my-cedet-hook)
 
