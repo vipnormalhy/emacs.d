@@ -5,4 +5,11 @@
 (require-package 'hide-region)
 (require-package 'hide-lines)
 
+(defun my-hide-region-hook ()
+  (hs-minor-mode t))
+
+(add-hook 'c++-mode-hook 'my-hide-region-hook)
+(add-hook 'c-mode-hook 'my-hide-region-hook)
+(add-hook 'python-mode-hook 'my-hide-region-hook)
+
 (provide 'init-hide-region)
