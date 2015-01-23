@@ -26,4 +26,6 @@
 
 (require 'init-cscope)
 
+;;(require 'init-git)
+
 (provide 'init)
