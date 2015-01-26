@@ -10,7 +10,7 @@
 (setq-default ac-auto-start nil)
 (setq-default ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
 
-(define-key ac-mode-map [(\M n)] 'auto-complete)
+(define-key ac-mode-map [(\M p)] 'auto-complete)
 
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Use Emacs' built-in TAB completion hooks to trigger AC (Emacs >= 23.2)
