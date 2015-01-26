@@ -28,4 +28,6 @@
 
 ;;(require 'init-git)
 
+(require 'init-open-dir)
+
 (provide 'init)
