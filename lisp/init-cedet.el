@@ -38,18 +38,13 @@
 (add-hook 'semantic-init-hooks 'my-semantic-include-func)
 
 ;; semantic completion hot-keys
-(defun my-cedet-hook ()
-	(local-set-key "\C-RET" 'semantic-ia-complete-symbol)
-	;;(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu) cannot found this function
-	(local-set-key "\C-c>" 'semantic-complete-analyze-inline)
-	(local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle))
-(defun my-c-mode-cedet-hook ()
-	(add-to-list 'ac-sources 'ac-source-semantic))
+(local-set-key "\C-RET" 'semantic-ia-complete-symbol)
+;;(local-set-key "\C-c?" 'semantic-ia-complete-symbol-menu) cannot found this function
+(local-set-key "\C-c>" 'semantic-complete-analyze-inline)
+(local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle)
 
-(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-(add-hook 'c++-mode-common-hook 'my-c-mode-cedet-hook)
-(add-hook 'c-mode-common-hook 'my-cedet-hook)
-(add-hook 'c++-mode-common-hook 'my-cedet-hook)
+;; add sematic autocomplete to auto-complete menu
+(add-to-list 'ac-sources 'ac-source-semantic)
 
 ;; ede settings
 (global-ede-mode t)
