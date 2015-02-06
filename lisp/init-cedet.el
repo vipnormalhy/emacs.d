@@ -45,7 +45,7 @@
 
 ;; mrub tag jump key
 (global-set-key (kbd "C-o") 'semantic-mrub-switch-tags)
-(global-set-key (kbd "C-x o") 'open-line)
+;;(global-set-key (kbd "C-x o") 'open-line)
 
 ;; add sematic autocomplete to auto-complete menu
 (add-to-list 'ac-sources 'ac-source-semantic)
