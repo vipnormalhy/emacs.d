@@ -12,6 +12,14 @@
 	 "Face used by `highlight-symbol-mode'."
 	 :group 'highlight-symbol)
 
+;; combine search keys
+(global-set-key (kbd "M-s *") 'highlight-symbol-next)
+(global-set-key (kbd "M-s #") 'highlight-symbol-prev)
+(global-set-key (kbd "M-s h *") 'highlight-symbol-next-in-defun)
+(global-set-key (kbd "M-s h #") 'highlight-symbol-prev-in-defun)
+
+(require 'highlight-symbol)
+
 (highlight-symbol-mode t)
 
 (provide 'init-search)

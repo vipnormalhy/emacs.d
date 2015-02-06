@@ -12,9 +12,9 @@
 
 (require 'init-color-theme)
 
+(require 'init-auto-complete)
 (require 'init-cedet)
 ;; auto complete environment
-(require 'init-auto-complete)
 
 ;; hide region and lines
 (require 'init-hide-region)
