@@ -69,4 +69,9 @@
       (menu-bar-mode -1)
       (scroll-bar-mode -1)))
 
+;; frame name
+(setq frame-title-format
+      (list (format "%s %%S: %%j " (system-name))
+	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+
 (provide 'init-display-style)
