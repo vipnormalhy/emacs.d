@@ -45,6 +45,9 @@
 
 ;; mrub tag jump key
 (global-set-key (kbd "C-o") 'semantic-mrub-switch-tags)
+(global-set-key (kbd "M-]") 'semantic-ia-fast-jump)
+(global-set-key (kbd "M-[ l") 'semantic-complete-jump-local)
+(global-set-key (kbd "M-[ g") 'semantic-complete-jump)
 ;;(global-set-key (kbd "C-x o") 'open-line)
 
 ;; add sematic autocomplete to auto-complete menu
