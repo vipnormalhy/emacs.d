@@ -71,7 +71,7 @@
 ;; ecb settings
 (require-package 'ecb)
 (require 'ecb)
-(setq ecb-auto-activate t)
+;(setq ecb-auto-activate t)
 
 ;(global-set-key [M-left] 'windmove-left)
 ;(global-set-key [M-right] 'windmove-right)
