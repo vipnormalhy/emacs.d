@@ -143,7 +143,9 @@ lpc-N-regex to go along with it, based on the keyword list K."
 		 (append lpc-block-stmt-1-keywords lpc-block-stmt-2-keywords))
   )
 
-(defconst lpc-comment-start-regex c-C++-comment-start-regexp)
+;;(defconst lpc-comment-start-regex c-C++-comment-start-regexp)
+;;c-C++-comment-start-regexp
+(defconst lpc-comment-start-regex c-comment-start-regexp)
 (defconst lpc-special-brace-lists '((?{ . ?})) )
 (defconst lpc-magic-quote-comma   '(9))
 (defconst lpc-magic-symbol-name   '(3))
@@ -414,5 +416,5 @@ lpc-N-regex to go along with it, based on the keyword list K."
   (c-update-modeline)
   )
 
-(provide 'lpc-mode)
+(provide 'init-lpc-mode)
 ;; lpc-mode.el ends here

@@ -30,6 +30,8 @@
 
 (require 'init-open-dir)
 
+(require 'init-lpc-mode)
+
 (provide 'init)
 
 (custom-set-variables
