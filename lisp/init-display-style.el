@@ -74,4 +74,5 @@
       (list (format "%s %%S: %%j " (system-name))
 	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
+(global-auto-revert-mode t)
 (provide 'init-display-style)
