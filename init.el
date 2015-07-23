@@ -26,7 +26,7 @@
 
 (require 'init-cscope)
 
-;;(require 'init-git)
+(require 'init-git)
 
 (require 'init-open-dir)
 
