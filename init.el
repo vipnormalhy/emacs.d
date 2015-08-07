@@ -30,7 +30,7 @@
 
 (require 'init-open-dir)
 
-(require 'init-lpc-mode)
+(require 'init-lpc-mode2)
 
 (provide 'init)
 
