@@ -9,6 +9,8 @@
 
 (add-hook 'c-mode-common-hook 'my-cscope-hook)
 (add-hook 'c++-mode-common-hook 'my-cscope-hook)
+(add-hook 'pike-mode-common-hook 'my-cscope-hook)
+(add-hook 'lpc-mode-common-hook 'my-cscope-hook)
 
 (provide 'init-cscope)
 

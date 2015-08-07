@@ -11,5 +11,7 @@
 (add-hook 'c++-mode-hook 'my-hide-region-hook)
 (add-hook 'c-mode-hook 'my-hide-region-hook)
 (add-hook 'python-mode-hook 'my-hide-region-hook)
+(add-hook 'pike-mode-hook 'my-hide-region-hook)
+(add-hook 'lpc-mode-hook 'my-hide-region-hook)
 
 (provide 'init-hide-region)
