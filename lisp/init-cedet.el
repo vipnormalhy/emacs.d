@@ -90,9 +90,9 @@
 ;(global-set-key [M-up] 'windmove-up)
 ;(global-set-key [M-down] 'windmove-down)
 
-(global-set-key (kbd "C-c <left>")  'windmove-left)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <up>")    'windmove-up)
-(global-set-key (kbd "C-c <down>")  'windmove-down)
+(global-set-key (kbd "C-c o b")  'windmove-left)
+(global-set-key (kbd "C-c o f") 'windmove-right)
+(global-set-key (kbd "C-c o p")    'windmove-up)
+(global-set-key (kbd "C-c o n")  'windmove-down)
 
 (provide 'init-cedet)
