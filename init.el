@@ -32,6 +32,8 @@
 
 (require 'init-lpc-mode2)
 
+(require 'init-python)
+
 (provide 'init)
 
 (custom-set-variables
