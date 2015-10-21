@@ -1,4 +1,4 @@
-(require-package 'smart-tab)
+re-package 'smart-tab)
 (require-package 'python-mode)
 (require-package 'highlight-indentation)
 
@@ -14,8 +14,13 @@
 ;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun my_python_setup()
+  (interactive)
   (setq-default indent-tabs-mode t)
-  (setq indent-tabs-mode t)
+  ;; Needn't set indent-tabs-mode but py-indent-tabs-mode
+  ;; see python-mode.el
+  ;;(setq indent-tabs-mode t)
+  (setq py-indent-tabs-mode t)
+  (message "enable indent-tabs-mode")
   (setq python-indent-offset 4)
   (setq tab-width 4)
   (require 'highlight-indentation)
