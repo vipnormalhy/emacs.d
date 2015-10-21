@@ -1,4 +1,4 @@
-re-package 'smart-tab)
+(require-package 'smart-tab)
 (require-package 'python-mode)
 (require-package 'highlight-indentation)
 
