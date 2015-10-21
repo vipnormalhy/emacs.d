@@ -1,6 +1,7 @@
 (require-package 'smart-tab)
 (require-package 'python-mode)
 (require-package 'highlight-indentation)
+(require-package 'flycheck)
 
 (require 'python-mode)
 
@@ -24,8 +25,10 @@
   (setq python-indent-offset 4)
   (setq tab-width 4)
   (require 'highlight-indentation)
-  (highlight-indentation-mode t)
+  ;;(highlight-indentation-mode t)
   (require 'smart-tab)
-  (global-smart-tab-mode t)) 
+  (global-smart-tab-mode t)
+  (require 'flycheck)
+  (flycheck-mode t)) 
 
 (provide 'init-python)
