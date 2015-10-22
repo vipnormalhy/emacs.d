@@ -2,16 +2,21 @@
 (require-package 'python-mode)
 (require-package 'highlight-indentation)
 (require-package 'flycheck)
+(require-package 'jedi)
 
 (require 'python-mode)
+(require 'jedi)
 
 (setq auto-mode-alist
-       (append
-	        '(("\\.py\\'" . python-mode))
-		        ))  
+      (append
+       '(("\\.py\\'" . python-mode))
+       ))
 
 (add-hook 'Py-mode-hook 'my_python_setup)
 (add-hook 'python-mode-hook 'my_python_setup)
+(add-hook 'Py-mode-hook 'jedi:setup)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t) ; optional
 ;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun my_python_setup()
@@ -29,6 +34,6 @@
   (require 'smart-tab)
   (global-smart-tab-mode t)
   (require 'flycheck)
-  (flycheck-mode t)) 
+  (flycheck-mode t))
 
 (provide 'init-python)
