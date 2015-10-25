@@ -4,13 +4,16 @@
 (defun my-cscope-hook ()
   (require 'xcscope)
   (setq cscope-do-not-update-database t)
-  (cscope-setup))
+  (cscope-setup)
+  (cscope-minor-mode t))
 ;;  (setq cscope-do-not-update-database t))
 
 (add-hook 'c-mode-common-hook 'my-cscope-hook)
 (add-hook 'c++-mode-common-hook 'my-cscope-hook)
 (add-hook 'pike-mode-common-hook 'my-cscope-hook)
 (add-hook 'lpc-mode-common-hook 'my-cscope-hook)
+(add-hook 'Py-mode-hook 'my-cscope-hook)
+(add-hook 'python-mode-hook 'my-cscope-hook)
 
 (provide 'init-cscope)
 
