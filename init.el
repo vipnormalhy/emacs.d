@@ -34,6 +34,8 @@
 
 (require 'init-python)
 
+(require 'protobuf-mode)
+
 (provide 'init)
 
 (custom-set-variables
