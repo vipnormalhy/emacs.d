@@ -18,6 +18,19 @@
 
 (semantic-mode t)
 
+;; auto c++ mode
+(setq auto-mode-alist
+       (append '(("\\.h$" . c++-mode)) auto-mode-alist))
+
+(setq auto-mode-alist
+       (append '(("\\.c$" . c-mode)) auto-mode-alist))
+
+(setq auto-mode-alist
+       (append '(("\\.cpp$" . c++-mode)) auto-mode-alist))
+
+(setq auto-mode-alist
+       (append '(("\\.hpp$" . c++-mode)) auto-mode-alist))
+
 ;; semantic completion
 (require 'semantic/ia)
 ;; semantic system header files in gcc
@@ -83,7 +96,9 @@
 ;; ecb settings
 (require-package 'ecb)
 (require 'ecb)
-;(setq ecb-auto-activate t)
+;; (setq ecb-auto-activate t)
+(custom-set-variables  
+	'(ecb-windows-width 0.20)) 
 
 ;(global-set-key [M-left] 'windmove-left)
 ;(global-set-key [M-right] 'windmove-right)
