@@ -25,8 +25,8 @@
   ;; Needn't set indent-tabs-mode but py-indent-tabs-mode
   ;; see python-mode.el
   ;;(setq indent-tabs-mode t)
-  (setq py-indent-tabs-mode t)
-  (message "enable indent-tabs-mode")
+  ;;(setq py-indent-tabs-mode t)
+  ;;(message "enable indent-tabs-mode")
   (setq python-indent-offset 4)
   (setq tab-width 4)
   (require 'highlight-indentation)
