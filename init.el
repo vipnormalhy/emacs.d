@@ -36,6 +36,8 @@
 
 (require 'protobuf-mode)
 
+(require 'init-json)
+
 (provide 'init)
 
 (custom-set-variables
