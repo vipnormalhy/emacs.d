@@ -14,4 +14,7 @@
 (add-hook 'pike-mode-hook 'my-hide-region-hook)
 (add-hook 'lpc-mode-hook 'my-hide-region-hook)
 
+(global-set-key (kbd "C-c h h") 'hs-hide-block)
+(global-set-key (kbd "C-c h s") 'hs-show-block)
+
 (provide 'init-hide-region)

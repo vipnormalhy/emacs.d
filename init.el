@@ -36,6 +36,8 @@
 
 (require 'protobuf-mode)
 
+(require 'init-helm)
+
 (provide 'init)
 
 (custom-set-variables
