@@ -38,6 +38,8 @@
 
 (require 'init-helm)
 
+(require 'init-json)
+
 (provide 'init)
 
 (custom-set-variables
