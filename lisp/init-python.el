@@ -21,7 +21,7 @@
 
 (defun my_python_setup()
   (interactive)
-  (setq-default indent-tabs-mode t)
+  ;;(setq-default indent-tabs-mode t)
   ;; Needn't set indent-tabs-mode but py-indent-tabs-mode
   ;; see python-mode.el
   ;;(setq indent-tabs-mode t)

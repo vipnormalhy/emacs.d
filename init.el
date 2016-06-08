@@ -36,6 +36,8 @@
 
 (require 'protobuf-mode)
 
+(require 'init-helm)
+
 (require 'init-json)
 
 (require 'init-cmake)
