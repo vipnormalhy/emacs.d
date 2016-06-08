@@ -38,6 +38,8 @@
 
 (require 'init-json)
 
+(require 'init-cmake)
+
 (provide 'init)
 
 (custom-set-variables
