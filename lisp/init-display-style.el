@@ -12,7 +12,7 @@
 ;; 	  '(lamda()
 ;; 		 (c-set-style "bsd")))
 (defun my-c-style-hook ()
-  (c-set-style "bsd"))
+  (c-set-style "cc-mode"))
 
 (add-hook 'c-mode-common-hook 'my-c-style-hook)
 (add-hook 'c++-mode-common-hook 'my-cscope-hook)

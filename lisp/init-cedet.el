@@ -109,7 +109,5 @@
 (global-set-key (kbd "C-c o f") 'windmove-right)
 (global-set-key (kbd "C-c o p")    'windmove-up)
 (global-set-key (kbd "C-c o n")  'windmove-down)
-(setq default-tab-width 4)
-(setq tab-width 4)
 
 (provide 'init-cedet)
