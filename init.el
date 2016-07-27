@@ -30,8 +30,6 @@
 
 (require 'init-open-dir)
 
-(require 'init-lpc-mode2)
-
 (require 'init-python)
 
 (require 'protobuf-mode)
