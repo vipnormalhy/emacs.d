@@ -32,8 +32,6 @@
   (require 'highlight-indentation)
   ;;(highlight-indentation-mode t)
   (require 'smart-tab)
-  (global-smart-tab-mode t)
-  (require 'flycheck)
-  (flycheck-mode t))
+  (global-smart-tab-mode t))
 
 (provide 'init-python)

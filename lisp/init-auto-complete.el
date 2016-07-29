@@ -67,6 +67,10 @@
 (add-hook 'pike-mode-hook 'my-clang-complete-setup)
 (add-hook 'lpc-mode-hook 'my-clang-complete-setup)
 
+(require 'flycheck)
+(global-flycheck-mode)
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
+
 ;; add auto comple paren settings
 ;; (setq skeleton-pair t)
 ;; (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
