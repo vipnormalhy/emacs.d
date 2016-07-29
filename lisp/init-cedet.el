@@ -19,17 +19,11 @@
 (semantic-mode t)
 
 ;; auto c++ mode
-(setq auto-mode-alist
-       (append '(("\\.h$" . c++-mode)) auto-mode-alist))
-
-(setq auto-mode-alist
-       (append '(("\\.c$" . c-mode)) auto-mode-alist))
-
-(setq auto-mode-alist
-       (append '(("\\.cpp$" . c++-mode)) auto-mode-alist))
-
-(setq auto-mode-alist
-       (append '(("\\.hpp$" . c++-mode)) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.c$" . c-mode))
+(add-to-list 'auto-mode-alist '("\\.hpp$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cc$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cpp$" . c++-mode))
 
 ;; semantic completion
 (require 'semantic/ia)

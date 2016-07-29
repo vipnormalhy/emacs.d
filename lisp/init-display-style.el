@@ -16,8 +16,6 @@
 
 (add-hook 'c-mode-common-hook 'my-c-style-hook)
 (add-hook 'c++-mode-common-hook 'my-cscope-hook)
-(add-hook 'pike-mode-common-hook 'my-c-style-hook)
-(add-hook 'lpc-mode-common-hook 'my-cscope-hook)
 
 ;; show paren mode
 (show-paren-mode t)

@@ -7,10 +7,7 @@
 (require 'python-mode)
 (require 'jedi)
 
-(setq auto-mode-alist
-      (append
-       '(("\\.py\\'" . python-mode))
-       ))
+(add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
 
 (add-hook 'Py-mode-hook 'my_python_setup)
 (add-hook 'python-mode-hook 'my_python_setup)

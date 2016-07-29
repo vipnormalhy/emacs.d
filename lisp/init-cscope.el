@@ -10,8 +10,6 @@
 
 (add-hook 'c-mode-common-hook 'my-cscope-hook)
 (add-hook 'c++-mode-common-hook 'my-cscope-hook)
-(add-hook 'pike-mode-common-hook 'my-cscope-hook)
-(add-hook 'lpc-mode-common-hook 'my-cscope-hook)
 (add-hook 'Py-mode-hook 'my-cscope-hook)
 (add-hook 'python-mode-hook 'my-cscope-hook)
 
