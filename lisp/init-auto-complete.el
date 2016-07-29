@@ -64,8 +64,6 @@
 
 (add-hook 'c-mode-hook 'my-clang-complete-setup)
 (add-hook 'c++mode-hook 'my-clang-complete-setup)
-(add-hook 'pike-mode-hook 'my-clang-complete-setup)
-(add-hook 'lpc-mode-hook 'my-clang-complete-setup)
 
 (require 'flycheck)
 (global-flycheck-mode)

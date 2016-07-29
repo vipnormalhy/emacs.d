@@ -104,4 +104,22 @@
 (global-set-key (kbd "C-c o p")    'windmove-up)
 (global-set-key (kbd "C-c o n")  'windmove-down)
 
+
+(defun check-and-add-header-path (checkpath)
+  "Check if CHECKPATH exists and it's a directory, if it is a directory, then and it to 'ac-clang-cflags and 'flycheck-clang-include-path."
+  (if (file-directory-p checkpath)
+    (progn
+      (add-to-list 'flycheck-gcc-include-path checkpath)
+      (add-to-list 'flycheck-clang-include-path checkpath))))
+
+(defun my-c-setup ()
+  "Setup local variables when loading a C/C++ file."
+  (check-and-add-header-path "include")
+  (check-and-add-header-path "../include")
+  (check-and-add-header-path "inc")
+  (check-and-add-header-path "/usr/include/python2.7")
+  (check-and-add-header-path "../inc"))
+
+(add-hook 'c-mode-common-hook 'my-c-setup)
+
 (provide 'init-cedet)
