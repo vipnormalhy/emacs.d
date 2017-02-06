@@ -40,6 +40,8 @@
 
 (require 'init-cmake)
 
+(require 'init-gradle)
+
 (provide 'init)
 
 (setq vc-handled-backends ())
