@@ -42,6 +42,8 @@
 
 (require 'init-gradle)
 
+(require 'init-csharp)
+
 (provide 'init)
 
 (setq vc-handled-backends ())
