@@ -74,5 +74,10 @@
       (list (format "%s %%S: %%j " (system-name))
 	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
+(defun show-file-name ()
+   "Show the full path file name in the minibuffer."
+     (interactive)
+       (message (buffer-file-name)))
+
 (global-auto-revert-mode t)
 (provide 'init-display-style)
